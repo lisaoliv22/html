@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <!-- Metatags -->
+        <meta charset="UTF-8">
+        <meta http-equiv= "X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHiFHseXDz3LwKUGbgiWkKq0Aqrtk0X6a1Vw&usqp=CAU">        <!-- CSS -->
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
+        <!-- Javascript -->
+        <script src = "https://cdn.rawgit.com/mattboldt/typed.js/master/js/typed.js"></script>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+                <script>var x =document.getElementById("myAudio"); function playAudio() {  x.play();   }  function pauseAudio() {  x.pause();  } </script>
+        <script>
+onload = function ()
+{
+    
+    var textarea = document.getElementsByTagName("textarea")[0];
+    var iframe  = document.getElementsByTagName("iframe")[0]; 
+    
+    var statements = "<!--\n\nLive Coding\n by Lisa\nSkullXploit\n-->\n\n<!DOCTYPE html>\n<html>\n<head>\n<title>hacked by Lisa</title>\n<head>\n<body>\n<style>\nbody{\nbackground-color:pink;\nbackground-image:url(https://i.pinimg.com/originals/1e/e2/d9/1ee2d95ac0d53cd78fd004984993dfeb.gif);\nheight:100%;\nbackground-position:center;\nbackground-repeat:no-repeat;\nbackground-size:cover;\ndisplay:flex;\nalign-items:center;\njustify-content:center;\n}\n  .hmm{\nborder: 4px double;\nborder-color: pink;\nborder-radius: 16px 16px 16px 16px;\n-moz-border-radius: 16px 16px 16px 16px;\n-webkit-border-radius: 16px 16px 16px 16px;\nheight:230px;\nwidth:300px;\nbackground-color:transparent;\n  } \n.hmm2{\nborder: 4px double;\nborder-color: pink;\nborder-radius: 16px 16px 16px 16px;\n-moz-border-radius: 16px 16px 16px 16px;\n-webkit-border-radius: 16px 16px 16px 16px;\nheight:auto;\nwidth:100px;\nbackground-color:transparent;\n  }\n</style>\n<center>\n\n<div class=\"hmm\">\n<br>\n<br>\n<font size=\"5\"color=\"pink\"> hacked by Lisa</font>\n \n<br>\n<br>\n<div class=\"hmm2\">\n<font color=\"pink\">SkullXploit</font>\n</div>\n</div>\n</body>\n </html>" ;
+    var counter = 0;
+
+    setInterval(function(){
+        textarea.innerHTML += statements.charAt( counter );
+        counter++;
+    }, 40)
+
+    // iFrame content
+    iframe = iframe.contentWindow || (iframe.contentDocument.document || 
+    iframe.contentDocument);
+    setInterval(function(){
+        iframe.document.open();
+        iframe.document.write(textarea.value);
+        iframe.document.close();
+ 
+        $("textarea").scrollTop($("textarea")[0].scrollHeight);
+    },100)
+    
+}
+ 
+        </script>
+        <style>
+            
+body { background-color:black; margin: 0; padding: 0; }
+
+/* Main */
+
+textarea {
+    width: 90%;
+    height: 200px;
+    margin: 15px auto 0 auto;
+    display: block;
+    resize: none;
+    font-family: "Inconsolata", monospace, arial, sans-serif;
+    background-color: transparent;
+    color: lime;
+    border: none;
+    font-weight:bold;
+}
+
+iframe {
+    margin: 0 auto;
+    display: block;
+    border: 3px solid black;
+}
+
+textarea:focus { outline: none; }
+
+button {
+    display: block;
+    margin: 10px 0 10px 0;
+    width: 200px;
+}
+	.btnn {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: transparent;
+    border: 1px dotted red;
+    letter-spacing: 0px;
+    color: red;
+    width: 60px;
+    height: 25px;
+    padding: 0;
+    font-size: 15px;
+    font-weight: bold;
+  }
+        </style>
+        <!-- Title -->
+        <title>hacked by Lisa</title>
+<meta name="theme-color"content="black">
+    </head>
+    
+
+    <body>
+        <div class="container">
+            <textarea></textarea><br>
+            <iframe width = "90%" height = "250"></iframe>
+       <center>
+<br>
+<audio id="myAudio">
+            <source src="https://g.top4top.io/m_1780n6jqs0.mp3" type="audio/ogg">
+            <source src="https://g.top4top.io/m_1780n6jqs0.mp3" type="audio/mpeg">
+        </audio>
+        <button onclick="playAudio()" class="btnn" type="button">Play</button>       <button onclick="pauseAudio()" class="btnn" type="button">Pause</button></center>
+        <script>
+              var x = document.getElementById("myAudio"); 
+
+              function playAudio() { 
+                  x.play(); 
+              } 
+
+               function pauseAudio() { 
+                  x.pause(); 
+              } 
+        </script>
+        </div>
+    </body>
+
+</html>
